@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: middleware-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: middleware
+  template:
+    metadata:
+      labels:
+        app: middleware
+    spec:
+      containers:
+        - name: middleware
+          image: geoffreybrophy/middleware:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
+          env:
+            - name: ELASTICSEARCH_HOST
+              value: 192.168.1.8
+            - name: ELASTICSEARCH_PORT
+              value: "9200"
+            - name: LOGSTASH_HOST
+              value: 192.168.1.8
+            - name: LOGSTASH_PORT
+              value: "5044"
+            - name: KIBANA_HOST
+              value: 192.168.1.8
+            - name: KIBANA_PORT
+              value: "5601"

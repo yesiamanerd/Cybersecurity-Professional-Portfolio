@@ -1,0 +1,10 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /path/to/your/log/files/*.log
+
+output.logstash:
+  hosts: ["192.168.1.8:5044"]  # Replace this with the IP address where Logstash is running (in this case, your Windows IP)
+
+logging.level: debug  # Set the log level as needed

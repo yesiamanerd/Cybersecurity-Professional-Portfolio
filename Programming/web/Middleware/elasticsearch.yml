@@ -1,0 +1,52 @@
+# ======================== Elasticsearch Configuration =========================
+
+# ---------------------------------- Cluster -----------------------------------
+# Use a descriptive name for your cluster:
+cluster.name: my_elasticsearch_cluster
+
+# ------------------------------------ Node ------------------------------------
+# Use a descriptive name for the node:
+node.name: node-1
+
+# ----------------------------------- Paths ------------------------------------
+# Set the path to the data directory:
+path.data: G:\logs\data
+
+# Set the path to the logs directory:
+path.logs: G:\logs\logs
+
+# ---------------------------------- Network ----------------------------------
+# Set the bind address to localhost (127.0.0.1):
+network.host: 127.0.0.1
+
+# --------------------------------- Discovery ---------------------------------
+# Disable network discovery:
+discovery.type: single-node
+# Define the initial master node for a single-node cluster:
+cluster.initial_master_nodes: node-1
+discovery.seed_hosts: ["127.0.0.1", "[::1]"]
+# ---------------------------------- Elasticsearch 7.x -------------------------
+# The following settings address the bootstrap check failures:
+
+# Set the maximum virtual memory areas (vm.max_map_count) to the required minimum:
+# For Elasticsearch 7.x, you should not need to set this as it's automatically handled by Elasticsearch itself.
+
+# ---------------------------------- Custom -----------------------------------
+# Add your custom configurations below:
+
+# For Elasticsearch 7.x and above, the 'cluster.initial_master_nodes' setting is used
+# to specify the master-eligible nodes in the cluster. Since you're running a single node,
+# you don't need to set this setting.
+
+# Note: Comment out or remove any settings that are not applicable for a single-node localhost setup.
+
+# ---------------------------------- X-Pack -----------------------------------
+# X-Pack is an Elasticsearch extension that bundles security, alerting, monitoring, and other features.
+# For a basic local setup, you can leave X-Pack settings commented out.
+
+# X-Pack Security (disabled by default - uncomment to enable):
+#xpack.security.enabled: true
+
+# Set the location of the X-Pack license file (if license is not automatically detected):
+#xpack.license.self_generated.type: trial
+

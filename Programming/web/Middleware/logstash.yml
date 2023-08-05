@@ -1,0 +1,2 @@
+http.host: "0.0.0.0"  # Listen on all network interfaces
+xpack.monitoring.enabled: false  # Disable X-Pack monitoring if not using the Elastic Stack with a valid license
