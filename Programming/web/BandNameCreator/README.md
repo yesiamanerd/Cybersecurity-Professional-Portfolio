@@ -48,24 +48,20 @@ The Band Name Creator is accessible through a web browser, where users are greet
 ## Tools Used
 
 ### OS
-```bash
-$ cat /etc/centos-release
+`$ cat /etc/centos-release`
 CentOS Linux release 7.9.2009 (Core)
 
-Version Control
-bash
-Copy code
-$ git --version
+### Version Control
+`$ git --version`
 git version 2.41.0
-IDE
+
+### IDE
 WebStorm 2023.2
 
-Logging and Analysis
-Elastic (ELK) stack
-
-json
-Copy code
-$ curl -X GET "localhost:9200/"
+### Logging and Analysis
+Elastic (ELK) stack 
+`$ curl -X GET "localhost:9200/"`
+```json
 {
   "name" : "localhost.localdomain",
   "cluster_name" : "elasticsearch",
@@ -83,43 +79,38 @@ $ curl -X GET "localhost:9200/"
   },
   "tagline" : "You Know, for Search"
 }
-FileBeat
-bash
-Copy code
-kubectl exec -it filebeat-jkbbg -n kube-system -- filebeat version
+
+### FileBeat
+`kubectl exec -it filebeat-jkbbg -n kube-system -- filebeat version`
 filebeat version 8.9.0 (amd64), libbeat 8.9.0 [dd50d49baeb99e0d21a31adb621908a7f0091046 built 2023-07-19 01:28:34 +0000 UTC]
-Containerization
-bash
-Copy code
-$ docker --version
+
+### Containerization
+`$ docker --version`
 Docker version 24.0.5, build ced0996
-Orchestration
-bash
-Copy code
-$ minikube version
+
+### Orchestration
+`$ minikube version`
 minikube version: v1.31.1
 commit: fd3f3801765d093a485d255043149f92ec0a695f
 
-$ kubectl version --short
+`$ kubectl version --short`
 Flag --short has been deprecated, and will be removed in the future. The --short output will become the default.
 Client Version: v1.27.4
 Kustomize Version: v5.0.1
 Server Version: v1.27.3
-Database
-Mongo running on Docker
 
-bash
-Copy code
-$ docker exec -it mongodb  mongo --eval "printjson(db.version())"
+### Database
+Mongo running on Docker
+`$ docker exec -it mongodb  mongo --eval "printjson(db.version())"`
 MongoDB shell version v4.4.23
 connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
 Implicit session: session { "id" : UUID("bfe739d4-2e47-48a5-a35c-974286688947") }
 MongoDB server version: 4.4.23
 "4.4.23"
-Runtime for Application Container
-bash
-Copy code
-$ node
+
+### Runtime for Application Container
+`$ node`
 Welcome to Node.js v14.21.3.
-Conclusion
+
+## Conclusion
 The Band Name Creator is a comprehensive full-stack project that showcases the integration of various technologies to create a cohesive and engaging application. Whether you're a musician looking for inspiration or a developer interested in exploring a multifaceted project, the Band Name Creator offers a unique blend of creativity and technical prowess.
