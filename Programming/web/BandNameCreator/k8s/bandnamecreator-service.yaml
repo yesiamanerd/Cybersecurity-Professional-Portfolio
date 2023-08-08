@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: bandnamecreator-service
+spec:
+  selector:
+    app: bandnamecreator # Make sure this matches the label of your deployment
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
+      nodePort: 30001 # Specifying the desired NodePort
+  type: NodePort

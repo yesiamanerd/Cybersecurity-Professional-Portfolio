@@ -1,0 +1,11 @@
+# Ignore node modules
+node_modules
+
+# Ignore git directory
+.git
+
+# Ignore any log files
+*.log
+
+# Ignore the Kubernetes YAML files if they are in the same directory
+k8s/

@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bandnamecreator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bandnamecreator
+  template:
+    metadata:
+      labels:
+        app: bandnamecreator
+    spec:
+      containers:
+        - name: bandnamecreator
+          image: bandnamecreator
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 3000 # Adjust this to the port your app is running on
+          env:
+            - name: MONGODB_URI
+              value: "mongodb://192.168.49.1:27017" # Adjust this to the correct MongoDB connection string
