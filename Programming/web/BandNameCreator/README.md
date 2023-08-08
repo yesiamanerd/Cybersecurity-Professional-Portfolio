@@ -79,6 +79,8 @@ Elastic (ELK) stack
   },
   "tagline" : "You Know, for Search"
 }
+```
+
 
 ### FileBeat
 `kubectl exec -it filebeat-jkbbg -n kube-system -- filebeat version`
