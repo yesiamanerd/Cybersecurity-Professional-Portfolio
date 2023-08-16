@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/Programming/web/Express Server/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/Programming/web/ElectronChat/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/Programming/web/EJS/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/Programming/web/EJS Partials/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/Programming/web/HTTP Requests/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/Programming/web/Passing Data EJS/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/Programming/web/QR Code Project/node_modules" />
+      <excludeFolder url="file://$MODULE_DIR$/Programming/web/Sample EJS/node_modules" />
+    </content>
+    <content url="file://$MODULE_DIR$/Programming/web/EJS Partials/node_modules" />
+    <content url="file://$MODULE_DIR$/Programming/web/EJS/node_modules" />
+    <content url="file://$MODULE_DIR$/Programming/web/ElectronChat/node_modules" />
+    <content url="file://$MODULE_DIR$/Programming/web/Express Server/node_modules" />
+    <content url="file://$MODULE_DIR$/Programming/web/HTTP Requests/node_modules" />
+    <content url="file://$MODULE_DIR$/Programming/web/Passing Data EJS/node_modules" />
+    <content url="file://$MODULE_DIR$/Programming/web/QR Code Project/node_modules" />
+    <content url="file://$MODULE_DIR$/Programming/web/Sample EJS/node_modules" />
+    <content url="file://$MODULE_DIR$/Programming/web/middleware/node_modules" />
     <orderEntry type="jdk" jdkName="Python 3.10 (venv)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="@types/jquery" level="application" />
